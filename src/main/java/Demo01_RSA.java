@@ -25,15 +25,10 @@ public class Demo01_RSA {
         System.out.println("随机性生成公钥：" + keyMap.get(1));
         String messageEncrypt = encrypt(message, keyMap.get(1));// 公钥加密
         System.out.println("加密后信息内容："+messageEncrypt);
-
         String messageDecrypt = decrypt(messageEncrypt, keyMap.get(0));// 私钥解密
-
         System.out.println("解密后信息内容:"+messageDecrypt);
 
     }
-
-
-
 
     ////生成公钥和私钥
 
